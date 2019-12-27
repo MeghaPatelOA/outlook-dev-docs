@@ -1,7 +1,7 @@
 ---
 title: Scenario - Implement single sign-on to your service
 description: Learn about using the single-sign-on token and Exchange identity token provided by an Outlook add-in to implement SSO with your service.
-ms.date: 04/15/2019
+ms.date: 12/26/2019
 localization_priority: Normal
 ---
 
@@ -40,7 +40,9 @@ To do this, the backend API creates a secure database of users. Each user will g
 }
 ```
 
-The add-in includes either the SSO access token (if it is available) or the Exchange identity token (if the SSO token is not available) with every call it makes to the backend Web API.
+The add-in includes either the SSO access token (if it is available) or the Exchange identity token (if the SSO token is not available) with every call it makes to the backend Web API. The following image illustrates this scenario.
+
+![Image of the SSO in Outlook add-in scenario](../images/SOC_MichelleBatch3_image11.png)
 
 ### Add-in startup
 
